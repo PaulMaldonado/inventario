@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pedido: MyString
+  codigo: 1
+  solicitud: MyText
+  surtido: 1
+
+two:
+  pedido: MyString
+  codigo: 1
+  solicitud: MyText
+  surtido: 1
