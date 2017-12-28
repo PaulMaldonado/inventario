@@ -1,0 +1,17 @@
+<div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a><%= link_to "Tecnyfarma", root_path, class: "brand-logo" %></a>
+        <ul class="right hide-on-med-and-down">
+          <% if user_signed_in? %>
+            <li><a><%= link_to "Artículos", articles_path %></a></li>
+            <li><a><%= link_to "Nuevo artículo", new_article_path %></a></li>
+            <li><a><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></a></li>
+          <% else %>
+            <li><a><%= link_to "Registrate", new_user_registration_path %></a></li>
+            <li><a><%= link_to "Iniciar sesión", new_user_session_path %></a></li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+  </div>

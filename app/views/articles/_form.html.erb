@@ -1,0 +1,45 @@
+<div class="container">
+	<div class="card-panel z-depth-3">
+	<h2 class="update"><%= name %> Artículo</h2>
+	<%= form_with model: @article do |form| %>
+	      <% if @article.errors.any? %>
+	        <div id="error_explanation">
+	          <h2>
+	            <%= pluralize(@article.errors.count, "error") %> prohibited
+	            this article from being saved:
+	          </h2>
+	          <ul>
+	            <% @article.errors.full_messages.each do |msg| %>
+	              <li><%= msg %></li>
+	            <% end %>
+	          </ul>
+	        </div>
+	      <% end %>
+
+	      <div class="row">
+	      	<div class="input-field col s12">
+	      		<%= form.label :codigo, "Código del artículo" %><br>
+				<%= form.text_field :codigo %>
+	      	</div>
+	      </div>
+
+	      <div class="row">
+	      	<div class="input-field col s12">
+	      		<%= form.label :description, "Nombre del artículo" %><br>
+				<%= form.text_field :description %>
+	      	</div>
+	      </div>
+
+	      <div class="row">
+	      	<div class="input-field col s12">
+	      		<%= form.label :cantidad, "Cantidad disponible" %><br>
+				<%= form.text_field :cantidad %>
+	      	</div>
+	      </div>
+
+	      <div class="actions">
+	      	<%= form.submit "Guardar", class: "btn indigo darken-4" %>
+	      </div>
+	<% end %>
+</div>
+</div>

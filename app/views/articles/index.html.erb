@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card-panel z-depth-2">
+    <h2 class="add">Inventario</h2>
+    <hr>
+    <table class="striped responsive">
+      <br>
+        <thead>
+          <tr>
+              <th>Código</th>
+              <th>Descripción del artículo</th>
+              <th>Cantidad disponible</th>
+              <th>Opciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @articles.each do |article| %>
+            <tr>
+              <td><%= article.codigo %></td>
+              <td><%= article.description %></td>
+              <td><%= article.cantidad %></td>
+              <td><%= link_to "Editar", edit_article_path(article), class: "btn light-blue darken-4" %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+  </div>
+</div>
