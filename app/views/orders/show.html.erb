@@ -1,0 +1,21 @@
+<h2>Lista de pedidos</h2>
+
+<p>
+	<strong>Departamento: </strong>
+	<%= @order.pedido %>
+</p>
+
+<p>
+	<strong>Código: </strong>
+	<%= @order.codigo %>
+</p>
+
+<p>
+	<strong>Solicitud creada por: <%= current_user.name %></strong>
+	<%= @order.solicitud %>
+</p>
+
+<p>
+	<strong>Cantidad de surtido: </strong>
+	<%= @order.surtido %>
+</p>

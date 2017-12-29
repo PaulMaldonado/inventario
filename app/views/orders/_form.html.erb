@@ -16,7 +16,41 @@
           </ul>
         </div>
       <% end %>
-      
+
+      <div class="row">
+        <div class="col s12 browser-default">
+          <%= form.label :pedido, "Elije un departamento", class: "big-write" %>
+          <%= form.select :pedido do %>
+            <option value="1">Álmacen</option>
+            <option value="2">Producción</option>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <%= form.label :codigo, "Código de producto" %>
+          <%= form.text_field :codigo %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <%= form.label :solicitud, "Solicitado por:" %>
+          <%= form.text_field :solicitud %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <%= form.label :surtido, "Surtido" %>
+          <%= form.text_field :surtido %>
+        </div>
+      </div>
+
+      <div class="actions">
+        <%= form.submit "Guardar", class: "btn indigo darken-4" %>
+      </div>
     <% end %>
   </div>
 </div>

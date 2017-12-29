@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card-panel z-depth-2">
+    <h2 class="add">Pedidos</h2>
+    <hr>
+    <table class="striped responsive">
+      <br>
+        <thead>
+          <tr>
+              <th>Departamento</th>
+              <th>Código</th>
+              <th>Solicitud creada por</th>
+              <th>Surtido</th>
+              <th>Opciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @orders.each do |order| %>
+            <tr>
+              <td><%= order.pedido %></td>
+              <td><%= order.codigo %></td>
+              <td><%= order.solicitud %></td>
+              <td><%= order.surtido %></td>
+              <td><%= link_to "Editar", edit_order_path(order), class: "btn light-blue darken-4" %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+  </div>
+</div>

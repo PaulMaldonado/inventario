@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :articles
+  resources :orders
 
   authenticated :user do
   	root 'home#index'
