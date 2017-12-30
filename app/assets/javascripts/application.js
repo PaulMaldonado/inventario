@@ -14,6 +14,11 @@
 //= require turbolinks
 //= require_tree .
 
+// Es la inicialización de javascript para el formulario de orders
  $(document).ready(function() {
     $('select').material_select();
   });
+
+// Es la inicialización para el dropdown en la navegación
+
+$(".dropdown-button").dropdown();
