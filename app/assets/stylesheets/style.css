@@ -68,9 +68,50 @@ body{
 	color: #757575;
 }
 
+.name-user{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #757575;
+}
+
+.email-user{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #757575;
+}
+
+.registers{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #757575;
+}
+
+.pedidos{
+	font-size: 1.2em
+	font-weight: bold;
+	color: #757575;
+}
+
+.contador{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #757575;
+}
+
 .big-write{
 	font-size: 1.2em;
+}
 
+.foto{
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+.pinck{
+	width: 40%;
+	height: 200px;
+	background-color: #616161;
 }
 
 .pading-large{

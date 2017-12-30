@@ -1,0 +1,38 @@
+<section>
+	<div class="container">
+		<div class="card-panel z-depth-3">
+			<div class="row">
+				<div class="pinck">
+					<p class="foto">Aquí va a ir la foto del usuario</p>
+				</div>
+			</div>
+			<br><br>
+
+			<div class="row">
+				<div class="col s4">
+					<p class="name-user">
+						<strong>Nombre:</strong> <%= @user.name %>
+					</p>
+
+					<p class="email-user">
+						<strong>Correo:</strong> <%= @user.email %>
+					</p>
+				</div>
+
+				<div class="col s4">
+					<h5 class="registers">Registros de Inventario</h5>
+					<p class="contador">
+						<strong>Artículos creados:</strong> <%= @user.articles.count %>
+					</p>
+				</div>
+
+				<div class="col s4">
+					<h5 class="registers">Registro de pedidos</h5>
+					<p class="pedidos">
+						<strong>Pedidos creados:</strong> <%= @user.orders.count %>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

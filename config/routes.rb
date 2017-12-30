@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :articles
   resources :orders
+  resources :usuarios, as: :users, only: [:show, :update]
 
   authenticated :user do
   	root 'home#index'
