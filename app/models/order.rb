@@ -3,4 +3,5 @@ class Order < ApplicationRecord
 	validates :codigo, presence: true
 	validates :solicitud, presence: true
 	validates :surtido, presence: true
+	belongs_to :user
 end

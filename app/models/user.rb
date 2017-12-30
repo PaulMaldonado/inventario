@@ -8,4 +8,5 @@ class User < ApplicationRecord
   validates :email, presence: true
   validates :password, presence: true, length: { in: 6..20 }
   validates :name, presence: true, uniqueness: true, length: { in: 6..15 }
+  has_many :orders
 end
